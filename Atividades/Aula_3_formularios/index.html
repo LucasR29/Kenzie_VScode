@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Formulários</title>
+        <style>
+            button{
+                background-color: black;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>Para participar do evento por favor preencha todo os campos abaixo.</h1>
+        </header>
+        <br>
+        <form>
+            
+            <label for="nome">Digite seu nome:</label> <br>    
+            <input type="text" id="nome" name="nome" placeholder="Insira seu nome" required="true" maxlength="30"><br><br>
+            
+            <label for="email">Digite seu email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Insira seu email" required="true" maxlength="30"><br><br>
+            
+            <label for="descrição"> Descreva o que te motivou a participar do evento:</label><br>
+            <textarea name="descrição" id="descrição" cols="60" rows="8"></textarea><br><br>
+            
+            <label for="senha">Digite sua senha:</label><br>
+            <input type="password" id="senha" name="senha" placeholder="Insira sua senha" required="true" maxlength="15"><br><br>
+            
+            <label for="confirma_senha">Confirme sua senha</label><br>
+            <input type="password" id="confirma_senha" name="confirma_senha" placeholder="Insira sua senha" required="true" maxlength="15"><br><br>
+
+            <label for="modulo">Módulo</label> <br>
+            <select id="Módulo" name="modulo" required="true">
+                <option value="">Escolher módulo</option>
+                <option value="Mod_1">Módulo 1</option>
+                <option value="Mod_2">Módulo 2</option>
+                <option value="Mod_3">Módulo 3</option>
+                <option value="Mod_4">Módulo 4</option>
+                <option value="Mod_5">Módulo 5</option>
+                <option value="Mod_6">Módulo 6</option>
+            </select>
+            
+            <br><br>
+
+            <!-- Exemplo radio -->
+            <p>Deseja receber novidades por e-mail?</p>
+            
+            <label for="sim">Sim</label> 
+            <input type="radio" value="sim" name="novidades_email" id="sim" required>
+            
+            <label for="nao">Não</label> 
+            <input type="radio" value="nao" name="novidades_email" id="nao"><br><br>
+            
+            <button type="submit">Cadastrar</button>
+        
+        </form>
+
+    </body>
+</html>
